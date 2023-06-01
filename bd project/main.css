@@ -12,6 +12,7 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 30px;
+    text-align: center;
 }
 
 .top-nav ul li a {
@@ -24,17 +25,27 @@ body{
     text-align: center;
     transition: 0.3s ease;
 }
-
-.top-nav ul li a:hover{
-  color: #7a7a7a;
-  transition: 0.35s ease-in;
+.top-nav ul li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.top-nav ul li a:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 
 .top-nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    margin-right: 50px;
 
 }
 
@@ -48,9 +59,10 @@ body{
 
 
 .top-page{
+  background-color: #00000090;
     position: relative;
-    top: 75px;
-    margin-bottom: 500px;
+    top: 269px;
+    margin-bottom: -60px;
 }
 
 h1{
@@ -242,21 +254,51 @@ div.desc {
   clear: both;
 }
 
+/* This is the main truck image part at the top of the page */
+
+.main-img{
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.main-img img{
+  max-width: 90%;
+  height: auto;
+  /* border-radius: 50px; */
+}
+
+/* This is the code for the mission title/div section */
+.our-mission{
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+  font-size: 50px;
+}
+.color-box {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: red; /* Change the color here */
+  vertical-align: middle;
+  margin-right: 3px; /* Add some spacing between the color box and the text */
+}
+
+
+
+
+
+
 
 /************************
 
 About us part 2 CSS
 
 ************************/
-* {
-  box-sizing: border-box;
-}
 
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
 
 /* Center website */
 .main {
@@ -320,27 +362,6 @@ h1 {
 This is the css code for the CONTACT US part 
 
 ********************************************/
-*, *:before, *:after {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  }
-  
-  body {
-  background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);
-  font-size: 12px;
-  }
-  
-  body, button, input {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-  }
-  
-  .background {
-  display: flex;
-  min-height: 100vh;
-  }
   
   .container {
   flex: 0 1 700px;
