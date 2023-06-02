@@ -33,7 +33,7 @@ body{
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #fff;
+  background: #b10000;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -82,7 +82,7 @@ h1{
     justify-content: center;
     align-items: center;
     
-    color: #efffbc;
+    color: #b10000;
   }
   
 
@@ -157,14 +157,14 @@ h1{
 
 
 
-/*Sliders CSS*/
+/*Cards CSS*/
 .cards {
   display: flex;
   justify-content: center;
 }
 
 .card {
-  background: gray;
+  background: rgb(105, 0, 0);
   min-width: 300px;
   width: 300px;
   min-height: 360px;
@@ -190,12 +190,15 @@ h1{
 }
 
 .cards .card p{
-  color: black;
+  color: white;
 }
 .cards .card h1 a{
   text-decoration: none;
-  
+  font-size: 35px;
   color: #efffbc;
+}
+.cards .card h1{
+  text-align: left;
 }
 /*Sliders CSS*/
 
@@ -271,7 +274,7 @@ div.desc {
 
 /* This is the code for the mission title/div section */
 .our-mission{
-  color: white;
+  color: #efffbc;
   display: flex;
   justify-content: center;
   margin-bottom: 70px;
