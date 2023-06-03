@@ -6,7 +6,6 @@
 body{
   background-color: black;
 }
-
 .navbar {
     display: flex;
     align-items: center;
@@ -166,13 +165,13 @@ h1{
 .card {
   background: rgb(105, 0, 0);
   min-width: 300px;
-  width: 300px;
+  width: 345px;
   min-height: 360px;
   border-radius: 16px;
   padding: 1.5rem;
   box-shadow: -1rem 0 3rem #2d2d2d;
   transition: 0.3s;
-  --distance: -130px;
+  --distance: -110px;
   color: white;
 }
 .card:not(:first-child) {
@@ -277,7 +276,7 @@ div.desc {
   color: #efffbc;
   display: flex;
   justify-content: center;
-  margin-bottom: 70px;
+  margin-bottom: 150px;
   font-size: 50px;
 }
 .color-box {
@@ -323,13 +322,6 @@ h1 {
 .row > .column {
   padding: 8px;
 }
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
-
 /* Clear floats after rows */
 .row:after {
   content: "";
@@ -340,7 +332,7 @@ h1 {
 /* Content */
 .content {
   background-color: white;
-  padding: 10px;
+  padding: 50px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -451,6 +443,15 @@ This is the css code for the CONTACT US part
   flex-direction: column;
   }
   
+  .about-boss{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+
+  }
+
   .app-title {
   display: flex;
   flex-direction: column;
