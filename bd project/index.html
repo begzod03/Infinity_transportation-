@@ -1,652 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="shrink.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- External links -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="main.css">
-    <script src="fnc.js"></script>
-
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display&family=Press+Start+2P&family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+    <!--  -->
 
     <title>Infinity Transportation</title>
-
 </head>
 <body>
 
-    <div class="navbar">
-
-        <div class="top-nav">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Partners</a></li>
-            </ul>
-        </div>
-
+    <!-- Navbar -->
+    <div class="content-navbar">
+        <button class="hamburger">&#9776;</button>
+        <ul class="nav-links">
+           <li><a id="navbar-about" onclick="scrollToDescription()">about</a></li>
+            <li><a id="navbar-work" onclick="scrollToWork()">work</a></li>
+            <li><a id="navbar-contact">contact</a></li>
+        </ul>
     </div>
+    <!---->
 
-    <div class="top-page">
-        <h1>INFINITY TRANSPORTATION BRINGS: <div class="roller">
-            <span id="rolltext">EXCELLENCE<br/>
-            QUALITY<br/>
-            SPEED<br/>
-            LOVE
-        </span>
-        </div>
-    </h1>
-    </div>
-
-    <!-- This is the code for the image at the top of the page -->
-    <div class="main-img">
-      <img src="./images/wallpaperflare.com_wallpaper (1).jpg" alt="black and white truck">
-    </div>
-
-
-    <!-- this is the code for the text below the img at the top of the page -->
-
-    <div class="our-mission">
-      <p class="mission-title">OUR MISSION</p>
-    </div>
-
-
-<!--sliders-->
-<div class="cards">
-    <div class="card">
-      <h1> <a href="#">Speed</a></h1>
-      <p>We are known for standing out for our fast and efficient service, ensuring swift deliveries. With experienced drivers and optimized logistics, they prioritize timely transportation without compromising safety. our commitment to promptness and reliability makes them a preferred choice for clients seeking quick and hassle-free deliveries in the trucking industry.</p>
-    </div>
-    <div class="card">
-      <h1> <a href="#">Excellence</a></h1>
-      <p>We place a strong emphasis on excellence in all aspects of their operations. From our years of experience to their team of experienced drivers, they strive for exceptional service. With a commitment to reliability, efficiency, and customer satisfaction, they continuously uphold high standards, making them a trusted choice in the trucking industry.</p>
-    </div>
-    <div class="card">
-      <h1> <a href="#">Experience</a></h1>
-      <p>With years of industry experience, Infinity Transportation boasts a team of highly skilled and experienced drivers. Their expertise in navigating diverse routes and handling various cargo types ensures reliable and efficient delivery. Combined with their exceptional customer support, the company provides a seamless and professional trucking experience.</p>
-    </div>
-    <div class="card">
-      <h1> <a href="#">Support</a></h1>
-      <p>The support team is dedicated to providing top-notch assistance. With our extensive knowledge and friendly approach, we excel in addressing customer inquiries and resolving issues promptly. Whether it's tracking shipments, addressing concerns, or providing expert guidance, our support team ensures a seamless experience for clients.</p>
-    </div>
-    <div class="card">
-      <h1> <a href="#">Quality</a></h1>
-      <p>
-        We care about our exceptional quality service. With a strong commitment to reliability and efficiency, we deliver goods promptly and securely. Our well-maintained fleet and skilled drivers ensure safe transportation while our customer service goes above and beyond, making them a trusted choice for freight needs.</p>
-    </div>
-  
-  </div>
-
-<!-- Blocks Title -->
-  <section class="main">
-
-    <p class="main-title">We are <span id="experienced">experienced,</span> <br> as numbers don't lie</p>
-
-  </section>
-
-  <!-- Blocks -->
-  <section class="main">
-      <div class="block">
-        <div class="blocks">
-          <p>Our drivers have driven to the moon and back more than 100 times</p>
-        </div>
-
-        <div class="blocks">
-          <p>Delivered over 1,000,000 lbs of goods from one state to another</p>
-        </div>
-
-        <div class="blocks">
-          <p>We have served 5,000+ customers around the nation</p>
-        </div>
-
-        <div class="blocks">
-          <p>We offer the highest level of transportation quality</p>
-        </div>
-
-
-    </div>
- </section>
-
-
-
-    
-    
-  
-    <!--
-
-        This is part of the BODY 
-
-    -->
-
-    <style>
-    /* @media screen and (max-width: 650px) {
-      .column {
-        width: 100%;
-        display: block;
-      }
-    }
-
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-
-    .container {
-      padding: 0 16px;
-    }
-
-    .container::after, .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-    .title {
-      color: grey;
-    }
-
-    .button {
-      border: none;
-      outline: 0;
-      display: inline-block;
-      padding: 8px;
-      color: white;
-      background-color: #000;
-      text-align: center;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    .button:hover {
-      background-color: #555;
-    }
-
-    .row {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-  .column {
-    box-sizing: border-box;
-    margin: 4em;
-    min-width: 300px;
-    padding-right: -100px;
-  }
-
-  .card-wrapper {
-      margin: 0 auto;
-      max-width: 1px;
-  } */
-    </style>
-   
-<!-- 
-    <div class="about-boss">
-      <h2>Meet the amazing founders </h2>
-   
-    <p>They are looking for more partnership and growth within thier company</p>
-  </div>
-    <br>
-
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <img src="./images/ceo1fix.png" alt="Jane" style="width:100%">
-          <div class="container">
-            <h2>Bakhtiar Usmanov </h2>
-            <p class="title">CEO & Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
-        </div>
+    <!-- Image section -->
+    <div class="container-line">
+        <div id="line"></div>
       </div>
 
-      <div class="column">
-        <div class="card">
-          <img src= "./images/ceo2fix.jpg" alt="Mike" style="width:100%">
-          <div class="container">
-            <h2>Abbas </h2>
-            <p class="title">Art Director</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
-        </div>
-      </div>
-      
-    </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    <!--
-
-        This is part of the BODY  or WORK part 
-
-
-    -->
-
-    <!-- <div class="responsive">
-      <div class="gallery">
-        <div class="desc"><h2 style="color: white;">Unparalleled Dedication to Excellence</h2>
-          <p style="color: white;">Dive into the world of Infinity Transportation Corp - a business steeped in relentless dedication and unwavering commitment to delivering top-tier logistic solutions. Our expansive fleet showcased in this image reveals the breadth of our capabilities. We not only offer exceptional transport services but also boast an imposing array of vehicles equipped to handle diverse logistical demands. Our trucks, modern and impeccably maintained, are testaments to our reputation of excellence, evoking a sense of reliability and trust - the very foundation of our enduring success.</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="responsive">
-      <div class="gallery">
-        <div class="desc"><h2 style="color: white;">Driven by Innovation</h2>
-        <p style="color: white;">In this second picture, we showcase our state-of-the-art technology integration - the lifeblood of Infinity Transportation Corp's operation. Our innovative systems streamline efficiency, maintain timeliness and guarantee safety, all tailored towards offering you superior service. We pioneer in integrating cutting-edge technology with traditional trucking methodologies, creating a blend that guarantees accurate, on-time deliveries every time. This photograph symbolizes our ceaseless drive to stay ahead in the fast-evolving logistics sector.</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="responsive">
-      <div class="gallery">
-        <div class="desc"><h2 style="color: white;">Our Team - The Heart of Our Operation</h2>
-        <p style="color: white;">The third image invites you into the vibrant and dedicated world of our skilled team members. These are the people who fuel Infinity Transportation Corp, driving us forward on the highway to success. Our professional drivers, committed administrative staff, and astute logistics planners together form an intricate network of talent, dedication, and experience. They operate like clockwork to ensure seamless and efficient service delivery, underpinning the reputation of our company as a trusted partner in transportation.</p>
-      </div>
-      </div>
-    </div>
-    
-    <div class="responsive">
-      <div class="gallery">
-        <div class="desc"><h2 style="color: white;">End-to-End Logistics Solution</h2>
-        <p style="color: white;">The final picture offers a glance at our comprehensive logistics services. At Infinity Transportation Corp, we take pride in our all-encompassing approach to supply chain management. We provide services that span the entire logistics lifecycle, from procurement and warehousing to transportation and final delivery. This holistic approach ensures your goods are in safe, professional hands from start to finish, providing you peace of mind and making us a preferred partner for businesses of all sizes and industries. Our end-to-end solutions are designed with one aim in mind - to make your logistics hassle-free, so you can focus on what you do best: growing your business.</p>
+    <div class="container">
+        <img class="image" src="./images/wallpaperflare.com_wallpaper (1).jpg" alt="Your Image">
         
+        <div class="text-overlay">
+          <h1>Infinity Transportation</h1>
+          <p>Service to infinity and beyond</p>
         </div>
       </div>
-    </div>
-    
-    <div class="clearfix"></div>
-   -->
-    
-    
-    
-    
-    
-    
-    
-    
-<!--sliders-->
-    
-    <!--
 
-        This is part of the BODY 
+      <div class="container-line2">
+        <div id="line2"></div>
+      </div>
+      <!---->
 
-    -->
-
-    <!-- <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img_5terre.jpg">
-          <img src="img_5terre.jpg" alt="Cinque Terre">
+    <div id="description" class="hidden">
+        <a class="photo">
+            <div class="photo-text">
+                <p>
+                    <span class="who">Who are we?</span>
+                    <br><br>
+                    
+                        We are Infinity Transportation, a premier transportation company that embodies excellence and provides unparalleled services. Our core values revolve around speed, quality, perfection, and love. When it comes to speed, we prioritize swift and efficient transportation solutions, keeping up with the fast-paced demands of the modern world. We understand the importance of timely and reliable service.
+                    <br> <br>
+                        Quality is our unwavering commitment in every aspect of what we do. We meticulously maintain our fleet of vehicles and ensure that our team of professionals is highly trained to deliver nothing but the best. Every detail is meticulously taken care of to ensure your satisfaction.
+                        <br>
+                        <br>
+                        With our dedication to speed, quality, perfection, and love, we are your trusted partner for all your transportation needs. Choose us, Infinity Transportation, for an experience that goes beyond your expectations.
+                    </p>
+                </div>
+            <img src="./images/infinity.jpg" />        
         </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
     </div>
-    
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img_forest.jpg">
-          <img src="img_forest.jpg" alt="Forest">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
+
+
+    <!-- counter section -->
+    <div class="typewriter">
+        <h1>Numbers speak louder than words </h1>
     </div>
-    
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img_lights.jpg">
-          <img src="img_lights.jpg" alt="Northern Lights">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-    </div>
-    
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img_mountains.jpg">
-          <img src="img_mountains.jpg" alt="Mountains">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-    </div>
-    
-    <div class="clearfix"></div> -->
-
-
-    
-    <!----------------------------
-
-
-      About US part 2 
-
-
-    ------------------------------>
-
-
-
-    <!-- MAIN (Center website) -->
-    <!-- <div class="main">
-
-      <h1>MYLOGO.COM</h1>
-      <hr>
-      
-      <h2>PORTFOLIO</h2>
-      <p>Resize the browser window to see the responsive effect.</p> -->
-      
-      <!-- Portfolio Gallery Grid -->
-      <!-- <div class="row">
-        <div class="column">
-          <div class="content">
-            <img src="mountains.jpg" alt="Mountains" style="width:100%">
-            <h3>My Work</h3>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="content">
-            <img src="lights.jpg" alt="Lights" style="width:100%">
-            <h3>My Work</h3>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="content">
-            <img src="nature.jpg" alt="Nature" style="width:100%">
-            <h3>My Work</h3>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="content">
-            <img src="mountains.jpg" alt="Mountains" style="width:100%">
-            <h3>My Work</h3>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="content">
-        <img src="bear.jpg" alt="Bear" style="width:100%">
-        <h3>Some Other Work</h3>
-        <p>Lorem ipsum..</p>
-      </div> -->
-      
-      <!-- END MAIN -->
-      <!-- </div> -->
-
-      
-  
-    <!----------------------------
-
-
-      About US part 3
-
-
-    ------------------------------>
-
-    <!-- <html>
-      <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-      <!-- <style>
-      html {
-        box-sizing: border-box;
-      }
-  
-      *, *:before, *:after {
-        box-sizing: inherit;
-      }
-  
-      .column {
-        float: left;
-        width: 33.3%;
-        margin-bottom: 16px;
-        padding: 0 8px;
-      }
-  
-      @media screen and (max-width: 650px) {
-        .column {
-          width: 100%;
-          display: block;
-        }
-      }
-  
-      .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      }
-  
-      .container {
-        padding: 0 16px;
-      }
-  
-      .container::after, .row::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-  
-      .title {
-        color: grey;
-      }
-  
-      .button {
-        border: none;
-        outline: 0;
-        display: inline-block;
-        padding: 8px;
-        color: white;
-        background-color: #000;
-        text-align: center;
-        cursor: pointer;
-        width: 100%;
-      }
-  
-      .button:hover {
-        background-color: #555;
-      }
-      </style> -->
-      <!-- </head> -->
-      <!-- <body> -->
-  
-      <!-- <h2>Responsive "Meet The Team" Section</h2>
-      <p>Resize the browser window to see the effect.</p>
-      <br>
-  
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-            <div class="container">
-              <h2>Jane Doe</h2>
-              <p class="title">CEO & Founder</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>example@example.com</p>
-              <p><button class="button">Contact</button></p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="column">
-          <div class="card">
-            <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
-            <div class="container">
-              <h2>Mike Ross</h2>
-              <p class="title">Art Director</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>example@example.com</p>
-              <p><button class="button">Contact</button></p>
-            </div>
-          </div>
-        </div>
         
-        <div class="column">
-          <div class="card">
-            <img src="/w3images/team3.jpg" alt="John" style="width:100%">
-            <div class="container">
-              <h2>John Doe</h2>
-              <p class="title">Designer</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>example@example.com</p>
-              <p><button class="button">Contact</button></p>
-            </div>
-          </div>
-        </div>
-      </div>
-   -->
-      <!-- </body>
-      </html> -->
-
-
-
-      
-      <!-- 
-
-        This is the code for the contact us page. 
-
-      -->
-
-      <!-- <div class="background">
+    <section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
         <div class="container">
-          <div class="screen">
-            <div class="screen-header">
-              <div class="screen-header-left">
-                <div class="screen-header-button close"></div>
-                <div class="screen-header-button maximize"></div>
-                <div class="screen-header-button minimize"></div>
-              </div>
-              <div class="screen-header-right">
-                <div class="screen-header-ellipsis"></div>
-                <div class="screen-header-ellipsis"></div>
-                <div class="screen-header-ellipsis"></div>
-              </div>
+          <div class="row">
+            <div class="col-lg-3 stats">
+              <i class="fa fa-road style: color: #969696;" aria-hidden="true"></i>
+              <div class="counting" data-count="1235000">0</div>
+              <h5>Miles Driven</h5>
             </div>
-            <div class="screen-body">
-              <div class="screen-body-item left">
-                <div class="app-title">
-                  <span>CONTACT</span>
-                  <span>US</span>
-                </div>
-                <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div>
-              </div>
-              <div class="screen-body-item">
-                <div class="app-form">
-                  <div class="app-form-group">
-                    <input class="app-form-control" placeholder="NAME" value="Krisantus Wanandi">
-                  </div>
-                  <div class="app-form-group">
-                    <input class="app-form-control" placeholder="EMAIL">
-                  </div>
-                  <div class="app-form-group">
-                    <input class="app-form-control" placeholder="CONTACT NO">
-                  </div>
-                  <div class="app-form-group message">
-                    <input class="app-form-control" placeholder="MESSAGE">
-                  </div>
-                  <div class="app-form-group buttons">
-                    <button class="app-form-button">CANCEL</button>
-                    <button class="app-form-button">SEND</button>
-                  </div>
-                </div>
-              </div>
+      
+            <div class="col-lg-3 stats">
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <div class="counting" data-count="532">0</div>
+              <h5>Orders Executed</h5>
             </div>
-          </div> -->
-        <!-- <div class="credits">
-            inspired by
-            <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
-              <svg class="dribbble" viewBox="0 0 200 200">
-                <g stroke="#ffffff" fill="none">
-                  <circle cx="100" cy="100" r="90" stroke-width="20"></circle>
-                  <path d="M62.737004,13.7923523 C105.08055,51.0454853 135.018754,126.906957 141.768278,182.963345" stroke-width="20"></path>
-                  <path d="M10.3787186,87.7261455 C41.7092324,90.9577894 125.850356,86.5317271 163.474536,38.7920951" stroke-width="20"></path>
-                  <path d="M41.3611549,163.928627 C62.9207607,117.659048 137.020642,86.7137169 189.041451,107.858103" stroke-width="20"></path>
-                </g>
-              </svg>
-              
-            </a>
-          </div> -->
-        <!-- </div>
-      </div> -->
+      
+            <div class="col-lg-3 stats">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <div class="counting" data-count="436">0</div>
+              <h5>Happy clients</h5>
+            </div>
+      
+            <div class="col-lg-3 stats">
+              <i class="fa fa-balance-scale"></i>
+              <div class="counting" data-count="500">0</div>
+              <h5>Tons of good transported</h5>
+            </div>
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </section>
+    <!--  -->
 
 
-
-      <!---
+    <!-- Parterns Title -->
+    <div class="container-line3">
+      <div id="line3" class="animation-started"></div>
+    </div>
     
-    
-        This is the code for the FOOTER
+
+    <div class="partner-title" id="partnerTitle">
+
+      <!-- <iframe src="full-box.svg" width="957" height="115"></iframe> -->
+      <p>we work with <span id="title-span">world-renowned</span> companies</p>
         
+     
+    </div>
+    <div class="container-line4">
+      <div id="line4"></div>
+    </div>
     
-        -->
+
+    <!--  -->
+
+    <!-- Our partners -->
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide">
+          <img src="./images/partners/kroger-logo.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/partners/walmart-logo.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/partners/fedex-logo.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/partners/ALDI Logo Vector.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/partners/tesla-logo.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/partners/ups-logo.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/partners/usps-logo.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/partners/amazon-logo.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/partners/coca-cola-logo.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/partners/lays-logo.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/partners/bna-logo.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./images/partners/dhl-logo.svg" height="100" width="250" alt="" />
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+
+    <!-- Reviews section -->
+    <div class="title-class" style="display: flex; align-items: center; justify-content: center; margin: 40px 0;">
+      <p id="animatedDiv" class="center-div" style="color: white;  text-align: center; font-family: 'Bebas Neue', sans-serif;">reviews by customers <br> we wish to have :) <p>
+    </div>
+    <div class="reviews">
+    <div class="card">
+      <div class="card-image"></div>
+      <div class="card-text">
+       <svg class="google-logo" width="230" height="30" viewBox="0 0 74 24">
+          <g transform="translate(-50)">
+            <path fill="#4285F4" d="M59.24 8.19v2.46h5.88c-.18 1.38-.64 2.39-1.34 3.1-.86.86-2.2 1.8-4.54 1.8-3.62 0-6.45-2.92-6.45-6.54s2.83-6.54 6.45-6.54c1.95 0 3.38.77 4.43 1.76L65.4 2.5C63.94 1.08 61.98 0 59.24 0 54.28 0 50.11 4.04 50.11 9s4.17 9 9.13 9c2.68 0 4.7-.88 6.28-2.52 1.62-1.62 2.13-3.91 2.13-5.75 0-.57-.04-1.1-.13-1.54H59.24z"/>
+            <path fill="#EA4335" d="M75 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"/>
+            <path fill="#4285F4" d="M103.58 7.49h-.09c-.57-.68-1.67-1.3-3.06-1.3C97.53 6.19 95 8.72 95 12c0 3.26 2.53 5.81 5.43 5.81 1.39 0 2.49-.62 3.06-1.32h.09v.81c0 2.22-1.19 3.41-3.1 3.41-1.56 0-2.53-1.12-2.93-2.07l-2.22.92c.64 1.54 2.33 3.43 5.15 3.43 2.99 0 5.52-1.76 5.52-6.05V6.49h-2.42v1zm-2.93 8.03c-1.76 0-3.1-1.5-3.1-3.52 0-2.05 1.34-3.52 3.1-3.52 1.74 0 3.1 1.5 3.1 3.54.01 2.03-1.36 3.5-3.1 3.5z"/>
+            <path fill="#FBBC05" d="M88 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"/>
+            <path fill="#34A853" d="M108 .24h2.51v17.57H108z"/>
+            <path fill="#EA4335" d="M118.26 15.52c-1.3 0-2.22-.59-2.82-1.76l7.77-3.21-.26-.66c-.48-1.3-1.96-3.7-4.97-3.7-2.99 0-5.48 2.35-5.48 5.81 0 3.26 2.46 5.81 5.76 5.81 2.66 0 4.2-1.63 4.84-2.57l-1.98-1.32c-.66.96-1.56 1.6-2.86 1.6zm-.18-7.15c1.03 0 1.91.53 2.2 1.28l-5.25 2.17c0-2.44 1.73-3.45 3.05-3.45z"/>
+          </g>
+        </svg>
+        
+        
+
+        <p class="title" style="padding-top: 10px;">Sergey and Larry<br> ⭐️⭐️⭐️⭐️⭐️</p>
+        <p>When we first heard about Infinity Transportation, we jokingly wondered if they'd transport our complex algorithms at the speed of light. Alas, they haven't reached that level yet. But hey, they do excel at efficiently hauling cargo! Who needs algorithmic revolution when you have good old-fashioned delivery service, right?
+          <br> <br>
+          Their fleet of high-tech semi-trucks and commitment to quality and efficiency have made them a reliable choice for countless businesses. So, if you're seeking a trucking partner that won't revolutionize your algorithms but will get your goods from point A to point B, Infinity Transportation is the way to go.</p>
+      </div>
+    </div>
+    <div class="card rgb">
+      <div class="card-image card2"></div>
+      <div class="card-text card2">
+        <img src="./images/tesla-letters-cropped.svg" style="width: 250px; height: 20px;" alt="">
+        <p class="title" style="padding-top: 10px;">Elon Musk <br> ⭐️⭐️⭐️⭐️⭐️</p>
+        <p>Infinity Transportation's deliveries are so fast, they might as well be interstellar shipments. Their optimized logistics systems and cutting-edge technology have revolutionized the industry, leaving traditional trucking companies in the dust.
+          <br> <br>
+          If you need goods transported at warp speed, look no further. Infinity Transportation will have your cargo zooming towards its destination in no time. Just make sure you're prepared for the occasional sonic boom as they pass by, taking trucking to a whole new dimension.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image card3"></div>
+      <div class="card-text card3">
+        <img src="./images/meta-cropped.svg" style="width: 250px; height: 25px;" alt="">
+        <p class="title" style="padding-top: 10px;">Mark Zuckerberg <br> ⭐️⭐️⭐️⭐️⭐️</p>
+        <p>Such remarkable customer service has motivated us to create our own trucking firm within the metaverse. We aspire to replicate the level of care and support that Infinity Transportation provides, bringing unparalleled service to the virtual world. <br> <br> If you're looking for a trucking company that delivers not only goods but also top-notch customer service, Infinity Transportation is the one to choose. Their excellence has inspired us to venture into the meta verse, where we'll strive to provide the same level of exceptional care to our customers.</p>
+      </div>
+    </div>
+  </div>
+    <!-- Add more review divs as needed -->
+
+
+    <!-- Footer -->
+
+    
+
+
+
+    <footer>
+      <svg viewBox="0 0 120 28">
+        <defs>
+          <mask id="xxx">
+            <circle cx="7" cy="12" r="40" fill="#fff" />
+          </mask>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 13 -9"
+              result="goo"
+            />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+          <path
+            id="wave"
+            d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z"
+          />
+        </defs>
   
-        
-
-        <!-- <html>
-
-         <body>
-          <footer class="footer">
-            <div class="waves">
-              <div class="wave" id="wave1"></div>
-              <div class="wave" id="wave2"></div>
-              <div class="wave" id="wave3"></div>
-              <div class="wave" id="wave4"></div>
-            </div>
-            <ul class="social-icon">
-              <li class="social-icon__item"><a class="social-icon__link" href="#">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a></li>
-              <li class="social-icon__item"><a class="social-icon__link" href="#">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a></li>
-              <li class="social-icon__item"><a class="social-icon__link" href="#">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a></li>
-              <li class="social-icon__item"><a class="social-icon__link" href="#">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a></li>
-            </ul>
-            <ul class="menu">
-              <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-        
-            </ul>
-            <p>&copy;2021 Nadine Coelho | All Rights Reserved</p>
-          </footer>
-          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
-        <!-- </body>
-        
-        </html> -->
-
-
+        <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+        <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+  
+        <a href="#top" class="topball" id="topButton">
+          <g>
+            <circle
+              class="ball"
+              cx="110"
+              cy="8"
+              r="4"
+              stroke="none"
+              stroke-width="0"
+              fill="black"
+            />
+            <g class="arrow">
+              <polyline class="" points="108,8 110,6 112,8" fill="none" />
+              <polyline class="" points="110,6 110,10.5" fill="none" />
+            </g>
+          </g>
+        </a>
+  
+        <g class="gooeff">
+          <circle class="drop drop1" cx="20" cy="2" r="1.8" />
+          <circle class="drop drop2" cx="25" cy="2.5" r="1.5" />
+          <circle class="drop drop3" cx="16" cy="2.8" r="1.2" />
+          <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+        </g>
+      </svg>
+      <div class="links">
+        <a id="leetcode" href="https://leetcode.com/begzodU/" target="_blank"><img src="./images/leetcode.svg" alt=""></a>
+        <a id="github" href="https://github.com/begzod03" target="_blank"><img src="./images/github.svg" alt=""></a>
+        <a id="linkedin" href="https://www.linkedin.com/in/begzod-usmanov/" target="_blank"><img src="./images/inkedin.svg" alt=""></a>
+      </div>
+      <div id="footer-note">Designed and Developed by Bekzod Usmanov</div>
+      
+    </footer>
+      <!-- footer closer -->
 
 
     
-    
-    
-    
-    
-
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
